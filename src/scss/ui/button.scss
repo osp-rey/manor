@@ -1,0 +1,112 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.btn-s {
+  --background: var(--biege);
+  --border: var(--biege);
+  --color: black;
+  --background-h: var(--taupe);
+  --border-h: var(--taupe);
+  --color-h: black;
+
+  @include flex-center;
+  cursor: pointer;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 18px 38px;
+  width: fit-content;
+  outline: none;
+
+  line-height: 110%;
+  color: var(--color);
+  text-align: center;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+
+  @include hover {
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+  @include tablet {
+    padding: 14px 28px;
+  }
+
+  &._primary {
+    --background: var(--primary);
+    --border: var(--primary);
+    --color: white;
+    --background-h: var(--primary-l);
+    --border-h: var(--primary-l);
+    --color-h: white;
+  }
+  &._outline-gray {
+    --background: transparent;
+    --border: rgba(51, 51, 51, 0.3);
+    --color: var(--black);
+    --background-h: transparent;
+    --border-h: var(--primary);
+    --color-h: var(--black);
+  }
+  &._outline-gray-l {
+    --background: transparent;
+    --border: rgba(255, 255, 255, 0.3);
+    --color: white;
+    --background-h: transparent;
+    --border-h: var(--biege);
+    --color-h: white;
+  }
+}
+
+.btn-play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+  line-height: 130%;
+  text-align: center;
+
+  @include hover {
+    .circle {
+      background-color: rgba(191, 162, 134, 0.3);
+    }
+  }
+
+  .circle {
+    @include flex-center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(191, 162, 134, 0.3);
+    backdrop-filter: blur(5px);
+
+    width: 135px;
+    height: 135px;
+
+    color: var(--biege);
+
+    transition:
+      color 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    @include tablet {
+      width: 100px;
+      height: 100px;
+    }
+
+    svg {
+      width: 35px;
+      height: 35px;
+      @include tablet {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

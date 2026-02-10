@@ -1,0 +1,27 @@
+<svg width="60" height="74" viewBox="0 0 60 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="60" height="60" rx="30" fill="#22362B"/>
+<g clip-path="url(#clip0_2055_2967)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8593 36.2252V45.2708H19.4334V34.1621H14.6348V36.2252H16.8593ZM23.7808 45.1597C24.5435 45.3608 25.3115 45.4613 26.0848 45.4613C27.144 45.4613 28.0127 45.292 28.6906 44.9534C29.3686 44.6149 29.8718 44.1758 30.2001 43.6363C30.5285 43.0861 30.6927 42.4989 30.6927 41.8747C30.6927 40.912 30.3432 40.1238 29.644 39.5102C29.1544 39.0805 28.5013 38.8012 27.6845 38.6724L30.1843 35.8284V34.1621H22.3984V36.2252H27.1307L24.8454 38.8119V40.5099H26.0212C26.7521 40.5099 27.2818 40.6316 27.6102 40.875C27.9385 41.1183 28.1027 41.4515 28.1027 41.8747C28.1027 42.3191 27.9174 42.6682 27.5466 42.9221C27.1758 43.176 26.6674 43.303 26.0212 43.303C25.4492 43.303 24.8824 43.2131 24.321 43.0332C23.7596 42.8534 23.267 42.61 22.8433 42.3032L21.8423 44.271C22.3719 44.6519 23.0181 44.9482 23.7808 45.1597ZM34.7095 36.2252V45.2708H37.2836V34.1621H32.485V36.2252H34.7095Z" fill="#BFA286"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.5003 32.5159L26.6309 21.0783V14.5L48.5003 25.9376V32.5159Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6306 21.0615L14.5 27.4057V25.2632L26.6306 18.919V21.0615ZM26.6306 16.6985V14.5L14.5 20.8442V23.0428L26.6306 16.6985Z" fill="#BFA286"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.5003 28.1358L26.6309 16.6982V18.9187L48.5003 30.3562V28.1358Z" fill="#BFA286"/>
+</g>
+<g opacity="0.3" filter="url(#filter0_f_2055_2967)">
+<ellipse cx="30" cy="70" rx="17" ry="2" fill="url(#paint0_radial_2055_2967)"/>
+</g>
+<path d="M30 67.4212L21 60L21 62.5736L30 69.9947L39 62.5736L39 60L30 67.4212Z" fill="#22362B"/>
+<defs>
+<filter id="filter0_f_2055_2967" x="11" y="66" width="38" height="8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_2055_2967"/>
+</filter>
+<radialGradient id="paint0_radial_2055_2967" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 70) scale(17 2)">
+<stop/>
+<stop offset="1" stop-opacity="0.5"/>
+</radialGradient>
+<clipPath id="clip0_2055_2967">
+<rect width="34" height="31" fill="white" transform="translate(14.5 14.5)"/>
+</clipPath>
+</defs>
+</svg>

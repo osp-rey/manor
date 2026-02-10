@@ -1,0 +1,61 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-why {
+  &__slider {
+    @include tablet-min {
+      margin-top: 30px;
+    }
+  }
+  &__slide {
+    box-sizing: border-box;
+    padding: 40px 30px 20px 30px;
+    height: auto !important;
+
+    @include tablet {
+      padding: 20px;
+    }
+    @include tablet-min {
+      &::before {
+        display: none;
+      }
+      padding: 0px;
+    }
+
+    &:not(:first-child) {
+      &::before {
+        position: absolute;
+        content: "";
+        left: -1px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .icon {
+      display: block;
+      width: 100px;
+      margin-bottom: 30px;
+      @include tablet {
+        width: 60px;
+        margin-bottom: 20px;
+      }
+    }
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      margin-bottom: 20px;
+      @include tablet {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+    .val {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.card-product {
+  display: flex;
+  flex-direction: column !important;
+  &__gallery-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
+
+    .slider-arrow {
+      display: flex !important;
+      &._prev {
+        left: 0;
+      }
+      &._next {
+        right: 0;
+      }
+      @media (max-width: 1880px) {
+        &._prev {
+          left: 10px;
+        }
+        &._next {
+          right: 10px;
+        }
+      }
+      @include tablet-min {
+        display: none !important;
+      }
+    }
+    .slider-pagination {
+      position: absolute;
+      width: fit-content;
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+  }
+  &__gallery-slide {
+    width: 100%;
+    aspect-ratio: 1/0.74;
+    overflow: hidden;
+
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+    @include tablet-min {
+      aspect-ratio: 1/1;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 0.3s linear;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 0px 0px 20px 0px;
+    @include laptop-middle {
+      font-size: 18px;
+    }
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--gray-l);
+    margin: auto 0px 20px 0px;
+
+    @include tablet {
+      margin-bottom: 15px;
+      padding: 12px 10px;
+    }
+
+    li {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.05);
+      padding-bottom: 3px;
+      .name {
+        opacity: 0.5;
+      }
+      .val {
+        text-align: right;
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+  }
+}

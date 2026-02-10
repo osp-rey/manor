@@ -1,0 +1,21 @@
+@use './templates' as *;
+@use './media' as *;
+
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+  font-family: "Muller", sans-serif;
+  background-color: white;
+  color: var(--black);
+
+  font-size: 17px;
+
+  @include laptop-middle {
+    font-size: 16px;
+  }
+  @include tablet-min {
+    font-size: 14px;
+  }
+}

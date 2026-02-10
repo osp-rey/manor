@@ -1,0 +1,9 @@
+._scrollable {
+  @media (min-width: 992px) {
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+  }
+}

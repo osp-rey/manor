@@ -1,0 +1,76 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.check-wrapper {
+  --background: transparent;
+  --border: var(--primary);
+  --background-h: var(--biege);
+  --border-h: var(--biege);
+
+  position: relative;
+  z-index: 1;
+
+  &._white {
+    --background: transparent;
+    --border: white;
+    --background-h: white;
+    --border-h: white;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+
+    &:checked + .wpcf7-list-item-label::before {
+      background: url("@img/check-primary.svg") center / 80% auto no-repeat;
+      background-color: var(--background-h);
+      border-color: var(--border-h);
+    }
+  }
+  .wpcf7-list-item-label {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    cursor: pointer;
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+
+    @include tablet-min {
+      font-size: 12px;
+      gap: 10px;
+    }
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+
+    &::before {
+      flex-shrink: 0;
+      content: "";
+      width: 22px;
+      height: 22px;
+      background-color: var(--background);
+      border: 1px solid var(--border);
+
+      transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+
+      @include tablet-min {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

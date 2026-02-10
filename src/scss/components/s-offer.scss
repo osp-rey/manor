@@ -1,0 +1,25 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-offer {
+  overflow: hidden;
+  &__slider {
+    width: 100%;
+    @include laptop-min {
+      overflow: visible !important;
+    }
+
+    .swiper-slide {
+      box-sizing: border-box;
+      height: auto !important;
+
+      @include laptop-min {
+        width: 320px !important;
+      }
+
+      .card-offer {
+        height: 100%;
+      }
+    }
+  }
+}

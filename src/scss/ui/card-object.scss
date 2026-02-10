@@ -1,0 +1,61 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.card-object {
+  &__gallery {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+    @include laptop-min {
+      margin-bottom: 15px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 0.3s linear;
+    }
+    .title {
+      position: absolute;
+      width: fit-content;
+      padding: 15px 30px;
+      background-color: var(--primary);
+      left: 0;
+      top: 40px;
+
+      font-weight: 400;
+      font-size: 20px;
+      margin: 0;
+      color: white;
+
+      z-index: 10;
+
+      @include laptop {
+        font-size: 18px;
+        padding: 15px 20px;
+      }
+      @include tablet {
+        font-size: 16px;
+        padding: 10px 20px;
+        top: 20px;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+    width: 100%;
+    @include tablet {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-objects-sale {
+  overflow: hidden;
+  &__gallery {
+    overflow-x: auto;
+    margin: 0 -15px;
+    padding: 0 15px;
+    @include tablet {
+      margin: 0 -10px;
+      padding: 0 10px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      min-width: 750px;
+    }
+  }
+}

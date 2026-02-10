@@ -1,0 +1,45 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.modal {
+  display: none;
+  padding: 35px;
+  width: 600px;
+  max-width: calc(100% - 20px);
+  background-color: var(--light);
+  color: var(--black);
+  @include laptop-min {
+    padding: 35px 25px;
+  }
+  @include tablet {
+    padding: 25px 20px;
+  }
+
+  &__inside {
+  }
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include laptop-middle {
+      font-size: 28px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+  &__content {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .btn-s {
+      width: 100%;
+    }
+  }
+}

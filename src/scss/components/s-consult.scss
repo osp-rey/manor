@@ -1,0 +1,125 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-consult {
+  @include tablet {
+    .container {
+      padding: 0;
+    }
+  }
+  &__body {
+    overflow: hidden;
+    position: relative;
+    padding: 75px 30px;
+    background-color: var(--biege);
+    color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    @include mobile {
+      padding: 140px 10px;
+    }
+  }
+  &__body-decor {
+    position: absolute;
+    display: block;
+    width: 450px;
+    z-index: -1;
+    pointer-events: none;
+
+    @include desktop {
+      width: 400px;
+    }
+    @include laptop {
+      width: 300px;
+    }
+    @include laptop-middle {
+      width: 220px;
+    }
+    @include laptop-min {
+      width: 160px;
+    }
+    @include tablet {
+      width: 120px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+
+    &._left {
+      left: 0;
+      top: 0;
+    }
+    &._right {
+      right: 0;
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+  &__content {
+    margin: 0px 0px 30px 0px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+    @include tablet-min {
+      margin-bottom: 15px;
+    }
+  }
+  &__btn {
+  }
+  &__social {
+    margin-top: 30px;
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: start;
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+  &__social-text {
+    display: flex;
+    align-items: center;
+    padding: 17px 20px;
+    flex: 1;
+    @include tablet-min {
+      padding: 5px 18px;
+    }
+  }
+  &__social-btn {
+    @include flex-center;
+    width: 56px;
+    min-height: 48px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+    color: var(--primary);
+
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary-l);
+    }
+    @include mobile {
+      width: 48px;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.m-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0;
+  @include laptop {
+    font-size: 44px;
+  }
+  @include laptop-middle {
+    font-size: 38px;
+  }
+  @include laptop-min {
+    font-size: 32px;
+  }
+  @include tablet {
+    font-size: 28px;
+  }
+}
+.s-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0;
+  @include laptop {
+    font-size: 38px;
+  }
+  @include laptop-middle {
+    font-size: 32px;
+  }
+  @include laptop-min {
+    font-size: 28px;
+  }
+  @include tablet {
+    font-size: 24px;
+  }
+}
+.t-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  margin: 0;
+  @include laptop-min {
+    font-size: 24px;
+  }
+  @include tablet {
+    font-size: 20px;
+  }
+}
+.f-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0;
+  @include laptop-min {
+    font-size: 18px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
+}

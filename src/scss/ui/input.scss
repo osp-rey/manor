@@ -1,0 +1,42 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.input-control {
+  width: 100%;
+}
+.input {
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+  outline: none;
+  padding: 18px 28px;
+
+  font-size: 17px;
+
+  transition: border-color 0.3s ease;
+
+  @include laptop-middle {
+    font-size: 16px;
+    @include tablet {
+      padding: 14px 28px;
+    }
+  }
+  @include tablet {
+    padding: 12px 28px;
+  }
+
+  &._outline {
+    border-color: var(--primary);
+  }
+  &:focus {
+    border-color: var(--biege);
+  }
+
+  &::placeholder {
+    color: rgb(51, 51, 51, 0.5);
+
+    @include tablet-min {
+      font-size: 14px;
+    }
+  }
+}
