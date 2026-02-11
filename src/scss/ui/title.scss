@@ -42,6 +42,13 @@
   @include tablet {
     font-size: 24px;
   }
+
+  &._mb {
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+  }
 }
 .t-title {
   font-weight: 700;

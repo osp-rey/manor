@@ -1,0 +1,55 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-about {
+  @include laptop {
+    overflow: hidden;
+  }
+  &__slider {
+    width: 100%;
+    @include laptop {
+      overflow: visible !important;
+    }
+  }
+  &__slide {
+    box-sizing: border-box;
+    padding: 30px;
+    aspect-ratio: 1/1;
+    @include laptop {
+      width: 560px !important;
+      max-width: 100%;
+    }
+    @include laptop-min {
+      width: 450px !important;
+      padding: 20px;
+    }
+    @include tablet {
+      width: 400px !important;
+      aspect-ratio: 1/1.1;
+    }
+    @include tablet-min {
+      padding: 15px;
+    }
+  }
+  &__slide-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0px 0px 15px 0px;
+    @include laptop-min {
+      font-size: 20px;
+    }
+  }
+  &__slide-content {
+    margin: 0;
+  }
+  &__slide-img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

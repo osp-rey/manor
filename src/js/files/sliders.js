@@ -221,4 +221,28 @@ export default function sliders() {
       },
     });
   }
+
+  const aboutSlider = document.querySelector(".s-about__slider");
+
+  if (aboutSlider) {
+    const swiper = new Swiper(aboutSlider, {
+      speed: 900,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-about .slider-arrow._prev",
+        nextEl: ".s-about .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-about .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1366: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 }

@@ -1,0 +1,71 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-intro {
+  position: relative;
+  color: white;
+  min-height: 600px;
+  padding-bottom: 50px;
+  z-index: 1;
+
+  @include laptop-middle {
+    min-height: 500px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(51, 51, 51, 0.6);
+    z-index: -1;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      margin-top: 0;
+    }
+  }
+  &__main {
+    flex: 0 1 860px;
+    color: white;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__title {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  &__content {
+    margin: 0px 0px 40px 0px;
+    @include tablet-min {
+      margin-bottom: 30px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include tablet-min {
+      gap: 15px;
+      .btn-s {
+        width: 100%;
+      }
+    }
+  }
+  &__btn-play {
+    margin: 0 auto;
+  }
+}

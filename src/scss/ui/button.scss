@@ -61,10 +61,34 @@
     --border-h: var(--biege);
     --color-h: white;
   }
+  &._ghost {
+    --background: var(--ghost);
+    --border: var(--ghost);
+    --color: var(--black);
+    --background-h: var(--primary-l);
+    --border-h: var(--primary-l);
+    --color-h: white;
+  }
+  &._outline-white {
+    --background: transparent;
+    --border: rgba(255, 255, 255, 0.3);
+    --color: white;
+    --background-h: white;
+    --border-h: white;
+    --color-h: var(--black);  
+  }
 
   svg {
     width: 32px;
     height: 32px;
+  }
+}
+
+.loadmore-btn {
+  width: 100%;
+  margin-top: 40px;
+  @include laptop-min {
+    margin-top: 30px;
   }
 }
 
@@ -81,6 +105,8 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  width: fit-content;
+  flex-shrink: 0;
 
   line-height: 130%;
   text-align: center;

@@ -1,10 +1,26 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .breadcrumbs {
   padding: 30px 0px;
   line-height: 110%;
-  
+
+  &._white {
+    .aioseo-breadcrumb:last-child {
+      opacity: 0.5;
+    }
+    .aioseo-breadcrumb a {
+      color: white;
+      @include hover {
+        color: var(--biege);
+      }
+
+      &::after {
+        background: url("@img/next-white.svg") center / 100% auto no-repeat;
+      }
+    }
+  }
+
   .aioseo-breadcrumbs {
     display: flex;
     align-items: center;
@@ -18,7 +34,7 @@
     gap: 10px;
     color: var(--biege);
 
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     @include hover {
       color: var(--primary);

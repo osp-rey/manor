@@ -23,6 +23,7 @@
 @use "./ui/card-offer";
 @use "./ui/card-vlog";
 @use "./ui/breadcrumbs";
+@use "./ui/pagination";
 
 // components
 @use "./components/header";
@@ -41,5 +42,10 @@
 @use "./components/s-connect";
 @use "./components/s-contacts";
 @use "./components/s-help";
+@use "./components/s-archive-object";
+@use "./components/s-intro-object";
+@use "./components/s-adv";
+@use "./components/s-about";
+@use "./components/s-plan";
 
 @use "./components/footer";

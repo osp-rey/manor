@@ -25,6 +25,7 @@
   }
   &.swiper-button-disabled {
     opacity: 0.5;
+    pointer-events: none;
   }
   &._prev {
     left: -55px;
