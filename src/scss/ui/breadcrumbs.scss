@@ -1,0 +1,47 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.breadcrumbs {
+  padding: 30px 0px;
+  line-height: 110%;
+  
+  .aioseo-breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .aioseo-breadcrumb a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--biege);
+
+    transition: color .3s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 6px;
+      height: 13px;
+      background: url("@img/next-biege.svg") center / 100% auto no-repeat;
+      flex-shrink: 0;
+    }
+  }
+
+  .aioseo-breadcrumb-separator {
+    display: none;
+  }
+
+  & + .sect-m {
+    margin-top: 0 !important;
+  }
+  & + .sect-p {
+    padding-top: 0 !important;
+  }
+}
