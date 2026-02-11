@@ -37,14 +37,13 @@
   flex-shrink: 0;
   gap: 10px;
 }
-
 .social-s-item {
   display: block;
   flex-shrink: 0;
   width: 36px;
   height: 36px;
 
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 
   @include hover {
     color: var(--biege);
@@ -53,5 +52,50 @@
   svg {
     width: 100%;
     height: 100%;
+  }
+}
+
+.social-c {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  &._biege {
+    .social-c-item {
+      background-color: var(--biege);
+      @include hover {
+        background-color: var(--nude);
+      }
+    }
+  }
+}
+.social-c-item {
+  @include flex-center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--nude);
+
+  color: var(--primary);
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--biege);
+  }
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

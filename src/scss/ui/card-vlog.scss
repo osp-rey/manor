@@ -1,0 +1,53 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.card-vlog {
+  display: flex;
+  flex-direction: column;
+  &__gallery {
+    @include flex-center;
+    position: relative;
+    aspect-ratio: 1/0.71;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+    @include tablet {
+      margin-bottom: 15px;
+      aspect-ratio: 1/0.75;
+    }
+
+    .btn-play {
+      position: absolute;
+      z-index: 1;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s linear;
+    }
+  }
+  &__title {
+    display: block;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--biege);
+    }
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+  &__date {
+    margin-top: auto;
+    opacity: 0.5;
+  }
+}

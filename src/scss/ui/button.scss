@@ -17,6 +17,7 @@
   padding: 18px 38px;
   width: fit-content;
   outline: none;
+  gap: 15px;
 
   line-height: 110%;
   color: var(--color);
@@ -60,9 +61,21 @@
     --border-h: var(--biege);
     --color-h: white;
   }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .btn-play {
+  --background: rgba(0, 0, 0, 0.5);
+  --background-h: rgba(191, 162, 134, 0.3);
+  --border: rgba(191, 162, 134, 0.3);
+  --border-h: rgba(191, 162, 134, 0.3);
+  --color-circle: var(--biege);
+  --color-circle-h: var(--biege);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,21 +87,37 @@
 
   @include hover {
     .circle {
-      background-color: rgba(191, 162, 134, 0.3);
+      background-color: var(--background-h);
+      border: 1px solid var(--border-h);
+      color: var(--color-circle-h);
     }
+  }
+
+  &._flex {
+    flex-direction: row;
+    text-align: start;
+    width: fit-content;
+  }
+  &._nude {
+    --background: var(--nude);
+    --background-h: var(--biege);
+    --border: var(--nude);
+    --border-h: var(--biege);
+    --color-circle: var(--primary);
+    --color-circle-h: var(--primary);
   }
 
   .circle {
     @include flex-center;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(191, 162, 134, 0.3);
+    background-color: var(--background);
+    border: 1px solid var(--border);
     backdrop-filter: blur(5px);
 
     width: 135px;
     height: 135px;
 
-    color: var(--biege);
+    color: var(--color-circle);
 
     transition:
       color 0.3s ease,
@@ -106,6 +135,44 @@
       @include tablet {
         width: 30px;
         height: 30px;
+      }
+    }
+  }
+
+  &._min {
+    .circle {
+      border: none;
+      width: 100px;
+      height: 100px;
+
+      @include tablet {
+        width: 80px;
+        height: 80px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  &._o-min {
+    .circle {
+      width: 60px;
+      height: 60px;
+
+      @include tablet-min {
+        width: 40px;
+        height: 40px;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        @include tablet-min {
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }

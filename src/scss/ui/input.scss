@@ -13,7 +13,9 @@
 
   font-size: 17px;
 
-  transition: border-color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
 
   @include laptop-middle {
     font-size: 16px;
@@ -22,14 +24,15 @@
     }
   }
   @include tablet {
-    padding: 12px 28px;
+    padding: 13px 28px;
   }
 
   &._outline {
     border-color: var(--primary);
   }
   &:focus {
-    border-color: var(--biege);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
   }
 
   &::placeholder {
@@ -37,6 +40,57 @@
 
     @include tablet-min {
       font-size: 14px;
+    }
+  }
+}
+
+.input-variants {
+  &__title {
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    @include tablet-min {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .wpcf7-form-control {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .wpcf7-list-item {
+    margin: 0;
+  }
+  input[type="radio"] {
+    display: none;
+    &:checked + .wpcf7-list-item-label {
+      background-color: var(--taupe);
+      color: white;
+    }
+  }
+  .wpcf7-list-item-label {
+    @include flex-center;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+    padding: 20px 24px;
+    
+    user-select: none;
+    text-align: center;
+    color: var(--black);
+    line-height: 100%;
+
+    transition: color .3s ease, background-color .3s ease;
+
+    @include hover {
+      background-color: var(--light);
+    }
+    @include tablet {
+      padding: 15px;
     }
   }
 }

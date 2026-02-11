@@ -193,4 +193,32 @@ export default function sliders() {
       },
     });
   }
+
+  const vlogSlider = document.querySelector(".s-vlog__slider");
+
+  if (vlogSlider) {
+    const swiper = new Swiper(vlogSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-vlog .slider-arrow._prev",
+        nextEl: ".s-vlog .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-vlog .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
 }

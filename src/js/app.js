@@ -3,6 +3,7 @@ import burger from "./files/burger.js";
 import inputBtnContent from "./files/inputBtnContent.js";
 import inputmask from "./files/inputmask.js";
 import location from "./files/location.js";
+import map from "./files/map.js";
 import scroallable from "./files/scrollbable.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scroallable();
   tab();
   location();
+  map();
 
   Fancybox.bind("[data-fancybox]", {});
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }]);

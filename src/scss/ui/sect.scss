@@ -44,7 +44,7 @@
     }
     .sect-head {
       border-color: rgba(255, 255, 255, 0.2);
-      &__subtitle {
+      &__item {
         border-color: rgba(255, 255, 255, 0.2);
       }
     }
@@ -54,6 +54,7 @@
 .sect-head {
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   margin-bottom: 40px;
+
   @include tablet {
     margin-bottom: 30px;
   }
@@ -63,6 +64,16 @@
 
   &._mb-off {
     margin-bottom: 0;
+  }
+  &._contrary {
+    @include tablet {
+      .sect-head__item {
+        margin: 30px 0px 0px 0px;
+        &:first-child {
+          order: 2;
+        }
+      }
+    }
   }
 
   &__wrapper {
@@ -77,24 +88,44 @@
       padding-bottom: 0;
     }
   }
-  &__subtitle {
-    padding-right: 40px;
-    border-right: 1px solid rgba(51, 51, 51, 0.2);
-    @include laptop-min {
-      padding: 0;
-      border: none;
-      margin-bottom: 20px;
+  &__item {
+    &:first-child {
+      padding-right: 40px;
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+      @include laptop-min {
+        padding: 0;
+        border: none;
+        margin-bottom: 20px;
+      }
     }
+    &:nth-child(2) {
+      padding-left: 40px;
+      padding-bottom: 30px;
+      @include laptop-min {
+        padding: 0;
+      }
+    }
+  }
+  &__subtitle {
     @include tablet-min {
       display: none;
     }
   }
-  .s-title {
-    padding-left: 40px;
-    padding-bottom: 30px;
+  &__btn {
+    padding: 11px 28px;
+    margin-top: 35px;
     @include laptop-min {
-      padding: 0;
+      margin-top: 15px;
     }
+    @include tablet {
+      margin-top: 0;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__content {
+    margin: 10px 0px 0px 0px;
   }
 }
 
@@ -103,6 +134,10 @@
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   @include laptop-min {
     margin-bottom: 30px;
+  }
+
+  &._border-off {
+    border: none;
   }
 
   .s-nav {

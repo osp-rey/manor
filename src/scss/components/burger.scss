@@ -31,6 +31,9 @@
   @include laptop-min {
     border-top: none;
   }
+  @include tablet-min {
+    height: 100svh;
+  }
 
   &__wrapper {
     @include tablet-min {
