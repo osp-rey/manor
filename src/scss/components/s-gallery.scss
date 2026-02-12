@@ -1,0 +1,46 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-gallery {
+  overflow: hidden;
+  &__slider {
+    overflow: visible !important;
+    width: 100%;
+  }
+  &__slide {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    outline: none;
+    user-select: none;
+    width: 500px !important;
+    max-width: 100%;
+    opacity: 0.5;
+
+    transition: opacity .3s ease;
+
+    &.swiper-slide-active, &.swiper-slide-next, &.swiper-slide-next + .swiper-slide {
+      opacity: 1;
+    }
+
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+    @include laptop-middle {
+      width: 400px !important;
+    }
+    @include tablet {
+      width: 320px !important;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform .3s linear;
+    }
+  }
+}

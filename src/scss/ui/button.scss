@@ -76,7 +76,7 @@
     --color: white;
     --background-h: white;
     --border-h: white;
-    --color-h: var(--black);  
+    --color-h: var(--black);
   }
 
   svg {
@@ -131,6 +131,14 @@
     --border: var(--nude);
     --border-h: var(--biege);
     --color-circle: var(--primary);
+    --color-circle-h: var(--primary);
+  }
+  &._primary {
+    --background: var(--primary);
+    --background-h: var(--biege);
+    --border: var(--primary);
+    --border-h: var(--biege);
+    --color-circle: var(--biege);
     --color-circle-h: var(--primary);
   }
 

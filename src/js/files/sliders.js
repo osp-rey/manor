@@ -173,6 +173,9 @@ export default function sliders() {
       speed: 900,
       spaceBetween: 15,
       slidesPerView: "auto",
+      autoplay: {
+        delay: 4500,
+      },
       navigation: {
         prevEl: ".s-offer .slider-arrow._prev",
         nextEl: ".s-offer .slider-arrow._next",
@@ -205,6 +208,9 @@ export default function sliders() {
         prevEl: ".s-vlog .slider-arrow._prev",
         nextEl: ".s-vlog .slider-arrow._next",
       },
+      autoplay: {
+        delay: 5000,
+      },
       pagination: {
         el: ".s-vlog .slider-pagination",
         clickable: true,
@@ -229,6 +235,9 @@ export default function sliders() {
       speed: 900,
       spaceBetween: 20,
       slidesPerView: "auto",
+      autoplay: {
+        delay: 4500,
+      },
       navigation: {
         prevEl: ".s-about .slider-arrow._prev",
         nextEl: ".s-about .slider-arrow._next",
@@ -304,6 +313,54 @@ export default function sliders() {
         swiper: thumbSwiper,
       },
       breakpoints: {},
+    });
+  }
+
+  const gallerySliders = document.querySelectorAll(".s-gallery__slider");
+
+  if (gallerySliders.length) {
+    gallerySliders.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 900,
+        spaceBetween: 15,
+        slidesPerView: "auto",
+        navigation: {
+          prevEl: slider
+            .closest(".slider-wrapper")
+            .querySelector(".slider-arrow._prev"),
+          nextEl: slider
+            .closest(".slider-wrapper")
+            .querySelector(".slider-arrow._next"),
+        },
+        pagination: {
+          el: slider.closest(".s-gallery").querySelector(".slider-pagination"),
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            spaceBetween: 20,
+            slidesPerView: "auto",
+          },
+        },
+      });
+    });
+  }
+
+  const layoutSlider = document.querySelector(".s-layout__slider");
+
+  if (layoutSlider) {
+    const swiper = new Swiper(layoutSlider, {
+      speed: 900,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-layout .slider-arrow._prev",
+        nextEl: ".s-layout .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-layout .slider-pagination",
+        clickable: true,
+      },
     });
   }
 }

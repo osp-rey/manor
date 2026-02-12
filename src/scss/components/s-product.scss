@@ -177,4 +177,211 @@
       transition: transform 0.3s linear;
     }
   }
+  &__main {
+    border-top: 1px solid rgba(51, 51, 51, 0.2);
+    margin-top: 40px;
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+  &__main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include laptop-middle {
+      grid-template-columns: 1fr;
+      padding-top: 30px;
+      gap: 30px;
+    }
+  }
+  &__main-col {
+    padding-top: 40px;
+    &:nth-child(odd) {
+      padding-right: 40px;
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+    }
+    &:nth-child(even) {
+      padding-left: 40px;
+    }
+    @include laptop-middle {
+      padding: 0 !important;
+      &:nth-child(odd) {
+        border-right: none;
+      }
+    }
+  }
+  &__main-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    @include desktop-middle {
+      grid-template-columns: 1fr;
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .btn-s {
+      width: 100%;
+
+      svg {
+        color: var(--biege);
+      }
+    }
+  }
+  &__main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--gray-l);
+
+    @include tablet {
+      padding: 20px;
+      gap: 15px;
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.05);
+
+      @include tablet {
+        gap: 15px;
+      }
+      @include tablet-min {
+        gap: 10px;
+        grid-template-columns: 1fr;
+      }
+
+      .name {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__col-head {
+    display: flex;
+    align-items: start;
+    gap: 40px;
+    margin-bottom: 30px;
+    @include laptop {
+      gap: 30px;
+      row-gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+  &__col-content {
+    flex: 1;
+    margin: 0;
+    @include laptop {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__col-play {
+    .circle {
+      width: 65px;
+      height: 65px;
+
+      svg {
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+  &__price-row {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 20px;
+
+    @include tablet {
+      gap: 20px;
+      row-gap: 15px;
+    }
+
+    div {
+      display: none;
+    }
+    span {
+      &:nth-child(2) {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 130%;
+        @include tablet {
+          font-size: 24px;
+        }
+      }
+      &:nth-child(3) {
+        font-size: 20px;
+        line-height: 130%;
+        text-decoration: line-through;
+        opacity: 0.5;
+        @include tablet {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  &__btn-submit {
+    width: calc(50% - 10px);
+    @include tablet {
+      width: auto;
+      flex: 1;
+    }
+    @include tablet-min {
+      width: 100%;
+      flex: auto;
+    }
+  }
+  &__social {
+    @include flex-center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--gray-l);
+    @include tablet-min {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      padding: 15px;
+    }
+  }
+  &__social-content {
+    opacity: 0.7;
+  }
+  &__social-list {
+    display: flex;
+    gap: 15px;
+  }
+  &__social-item {
+    display: block;
+    color: var(--primary);
+    width: 32px;
+    height: 32px;
+
+    transition: color .3s ease;
+
+    @include hover {
+      color: var(--biege);
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
