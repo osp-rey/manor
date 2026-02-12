@@ -24,6 +24,8 @@
 @use "./ui/card-vlog";
 @use "./ui/breadcrumbs";
 @use "./ui/pagination";
+@use "./ui/content";
+@use "./ui/filters";
 
 // components
 @use "./components/header";
@@ -48,5 +50,7 @@
 @use "./components/s-about";
 @use "./components/s-plan";
 @use "./components/s-purchase-methods";
+@use "./components/s-developer";
+@use "./components/s-shop";
 
 @use "./components/footer";

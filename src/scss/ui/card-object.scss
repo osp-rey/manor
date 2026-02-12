@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .card-object {
   &__gallery {
@@ -49,6 +49,12 @@
         padding: 10px 20px;
         top: 20px;
       }
+    }
+  }
+  &__title {
+    margin: 15px 0px 0px 0px;
+    @include tablet {
+      margin-top: 15px;
     }
   }
   &__btn {

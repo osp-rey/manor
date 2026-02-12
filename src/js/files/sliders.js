@@ -245,4 +245,34 @@ export default function sliders() {
       },
     });
   }
+
+  const purchaseMethodsSlider = document.querySelector(
+    ".s-purchase-methods__slider",
+  );
+
+  if (purchaseMethodsSlider) {
+    const swiper = new Swiper(purchaseMethodsSlider, {
+      speed: 900,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-purchase-methods .slider-arrow._prev",
+        nextEl: ".s-purchase-methods .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-purchase-methods .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1366: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 }

@@ -1,0 +1,69 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-developer {
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 80px;
+    @include desktop {
+      gap: 40px;
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  &__gallery{
+    position: sticky;
+    top: 150px;
+    display: block;
+    width: calc(50% - 40px);
+    @include desktop-middle {
+      width: calc(50% - 20px);
+    }
+    @include laptop-min {
+      position: static;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__info {
+    width: calc(50% - 40px);
+    @include desktop-middle {
+      width: calc(50% - 20px);
+    }
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__content {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+  }
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include desktop-middle {
+      grid-template-columns: 1fr;
+    }
+
+    .btn-s {
+      width: 100%;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

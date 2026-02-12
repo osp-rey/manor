@@ -1,0 +1,835 @@
+<section class="s-shop sect-m">
+  <div class="s-head">
+    <div class="container">
+      <h1 class="s-title">Готовые дома и проекты</h1>
+      <div class="s-nav">
+        <a href="#" class="s-nav__btn _active">Все готовые дома</a>
+        <a href="#" class="s-nav__btn">КП «Усадьба в Мирном»</a>
+        <a href="#" class="s-nav__btn">КП «Новая полянка»</a>
+        <a href="#" class="s-nav__btn">КК «Коттеджный комплекс»</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="btn-s _primary s-shop__filters-btn">
+      <span>Фильтр по домам и проектам</span>
+      <div class="circle">
+        <span id="filters-count">1</span>
+      </div>
+    </div>
+    <div hidden class="s-shop__filters-wrapper">
+      <div class="s-shop__filters-overlay"></div>
+      <div class="s-shop__filters filters">
+        <div class="s-shop__filters-close">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="s-shop__filters-inputs">
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_113"
+          >
+            <div
+              class="bapf_sfilter bapf_slidr bapf_slidr_jqrui bapf_slidr_ready"
+              data-op="slidr"
+              id="bapf_1"
+            >
+              <div class="bapf_head">
+                <h3>Стоимость строительства, млн. руб.</h3>
+              </div>
+              <div class="bapf_body">
+                <div class="bapf_slidr_all">
+                  <span class="bapf_from">
+                    <span class="bapf_tbprice">₽</span>
+                    <input type="text" />
+                  </span>
+                  <span class="bapf_to">
+                    <span class="bapf_tbprice">₽</span>
+                    <input type="text" />
+                  </span>
+                  <div
+                    class="bapf_slidr_main bapf_slidr_num ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                  >
+                    <div
+                      class="ui-slider-range ui-corner-all ui-widget-header"
+                      style="left: 0%; width: 100%"
+                    ></div>
+                    <span
+                      tabindex="0"
+                      class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 0%"
+                    ></span>
+                    <span
+                      tabindex="0"
+                      class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 100%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_113"
+          >
+            <div
+              class="bapf_sfilter bapf_slidr bapf_slidr_jqrui bapf_slidr_ready"
+              data-op="slidr"
+              id="bapf_1"
+            >
+              <div class="bapf_head">
+                <h3>Площадь, м2</h3>
+              </div>
+              <div class="bapf_body">
+                <div class="bapf_slidr_all">
+                  <span class="bapf_from">
+                    <span class="bapf_tbprice">₽</span>
+                    <input type="text" />
+                  </span>
+                  <span class="bapf_to">
+                    <span class="bapf_tbprice">₽</span>
+                    <input type="text" />
+                  </span>
+                  <div
+                    class="bapf_slidr_main bapf_slidr_num ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                  >
+                    <div
+                      class="ui-slider-range ui-corner-all ui-widget-header"
+                      style="left: 0%; width: 100%"
+                    ></div>
+                    <span
+                      tabindex="0"
+                      class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 0%"
+                    ></span>
+                    <span
+                      tabindex="0"
+                      class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 100%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-shop__filters-checkbox">
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_115"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_asradio">
+              <div class="bapf_head"><h3>Вид объекта</h3></div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input id="v-1" type="checkbox" value="Готовый" checked />
+                    <label for="v-1">Готовый</label>
+                  </li>
+                  <li>
+                    <input id="v-2" type="checkbox" value="Готовый" />
+                    <label for="v-2">Проект</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_115"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_asradio">
+              <div class="bapf_head"><h3>Этажность</h3></div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input
+                      id="s-1"
+                      type="checkbox"
+                      value="Одноэтажный"
+                      checked
+                    />
+                    <label for="s-1">Одноэтажный</label>
+                  </li>
+                  <li>
+                    <input id="s-2" type="checkbox" value="Двухэтажный" />
+                    <label for="s-2">Двухэтажный</label>
+                  </li>
+                  <li>
+                    <input id="s-3" type="checkbox" value="Трехэтажный" />
+                    <label for="s-3">Трехэтажный</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_115"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_asradio">
+              <div class="bapf_head"><h3>Материал</h3></div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input id="m-1" type="checkbox" value="Кирпич" checked />
+                    <label for="m-1">Кирпич</label>
+                  </li>
+                  <li>
+                    <input id="m-2" type="checkbox" value="Керамический блок" />
+                    <label for="m-2">Керамический блок</label>
+                  </li>
+                  <li>
+                    <input id="m-3" type="checkbox" value="Каркасный" />
+                    <label for="m-3">Каркасный</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_115"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_asradio">
+              <div class="bapf_head"><h3>Особенности</h3></div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input id="o-1" type="checkbox" value="Кирпич" checked />
+                    <label for="o-1">Терраса</label>
+                  </li>
+                  <li>
+                    <input id="o-2" type="checkbox" value="Керамический блок" />
+                    <label for="o-2">Панорамные окна</label>
+                  </li>
+                  <li>
+                    <input id="o-3" type="checkbox" value="Каркасный" />
+                    <label for="o-3">Баня или сауна</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_115"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_asradio">
+              <div class="bapf_head"><h3>Парковка</h3></div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input id="p-1" type="checkbox" value="Кирпич" checked />
+                    <label for="p-1">Гараж</label>
+                  </li>
+                  <li>
+                    <input id="p-2" type="checkbox" value="Керамический блок" />
+                    <label for="p-2">Парковочное место</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="berocket_single_filter_widget berocket_single_filter_widget_115"
+          >
+            <div class="bapf_sfilter bapf_ckbox bapf_asradio">
+              <div class="bapf_head"><h3>Кол-во спален</h3></div>
+              <div class="bapf_body">
+                <ul>
+                  <li>
+                    <input id="r-1" type="checkbox" value="Кирпич" checked />
+                    <label for="r-1">1</label>
+                  </li>
+                  <li>
+                    <input id="r-2" type="checkbox" value="Керамический блок" />
+                    <label for="r-2">2</label>
+                  </li>
+                  <li>
+                    <input id="r-3" type="checkbox" value="Керамический блок" />
+                    <label for="r-3">3</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-shop__grid">
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+      <div class="card-product">
+        <div class="swiper card-product__gallery-slider">
+          <div class="slider-arrow _prev _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-arrow _next _dark">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-wrapper">
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+            <a
+              href="@img/card-product.jpg"
+              data-fancybox
+              class="swiper-slide card-product__gallery-slide"
+            >
+              <img src="@img/card-product.jpg" alt="image" />
+            </a>
+          </div>
+          <div class="slider-pagination _bg-primary"></div>
+        </div>
+        <h5 class="card-product__title">
+          Кирпичный дом «Тип 1» в «Усадьба в Мирном»
+        </h5>
+        <ul class="list card-product__list">
+          <li>
+            <span class="name">Площадь дома</span>
+            <span class="val">289 м2</span>
+          </li>
+          <li>
+            <span class="name">Этажность</span>
+            <span class="val">2</span>
+          </li>
+          <li>
+            <span class="name">Материал</span>
+            <span class="val">Кирпич</span>
+          </li>
+          <li>
+            <span class="name">Вид объекта</span>
+            <span class="val">Готовый</span>
+          </li>
+          <li>
+            <span class="name">Местоположение</span>
+            <span class="val">КП «Усадьба в Мирном»</span>
+          </li>
+        </ul>
+        <a href="#" class="btn-s card-product__btn">Подробнее</a>
+      </div>
+    </div>
+    <div class="btn-s _outline-gray loadmore-btn">Показать ещё</div>
+  </div>
+</section>

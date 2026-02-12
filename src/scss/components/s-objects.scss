@@ -4,6 +4,7 @@
 .s-objects {
   overflow: hidden;
   &__slider {
+    width: 100%;
     @include laptop-min {
       overflow: visible !important;
     }
