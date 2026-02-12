@@ -1,5 +1,6 @@
 import "../scss/style.scss";
 import burger from "./files/burger.js";
+import buttonsNote from "./files/buttonsNote.js";
 import inputBtnContent from "./files/inputBtnContent.js";
 import inputmask from "./files/inputmask.js";
 import location from "./files/location.js";
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   tab();
   location();
   map();
+  buttonsNote()
 
   Fancybox.bind("[data-fancybox]", {});
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }]);

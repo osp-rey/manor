@@ -48,6 +48,13 @@
         border-color: rgba(255, 255, 255, 0.2);
       }
     }
+    .card-product__list {
+      background-color: var(--primary-l);
+
+      li {
+        border-color: rgba(255, 255, 255, 0.05);
+      }
+    }
   }
 }
 

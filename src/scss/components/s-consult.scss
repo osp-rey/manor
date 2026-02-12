@@ -9,10 +9,13 @@
   }
   &__body {
     overflow: hidden;
+    display: flex;
+    align-items: center;
     position: relative;
     padding: 75px 30px;
     background-color: var(--biege);
     color: rgba(0, 0, 0, 0.7);
+    min-height: 450px;
     z-index: 1;
     @include mobile {
       padding: 140px 10px;
