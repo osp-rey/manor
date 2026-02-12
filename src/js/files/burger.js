@@ -7,7 +7,9 @@ export default function burger() {
     document.body.addEventListener("click", handleClose);
     window.addEventListener("resize", changeHeight);
 
-    burger.addEventListener("click", (e) => e.stopPropagation());
+    burger.addEventListener("click", (e) => {
+      if (!e.target.hasAttribute("data-fancybox")) e.stopPropagation();
+    });
     btnToggle.addEventListener("click", (e) => {
       e.stopPropagation();
 

@@ -275,4 +275,35 @@ export default function sliders() {
       },
     });
   }
+
+  const productSlider = document.querySelector(".s-product__slider");
+
+  if (productSlider) {
+    const thumbSwiper = new Swiper(".s-product__thumb-slider", {
+      speed: 900,
+      spaceBetween: 10,
+      slidesPerView: "auto",
+      direction: "horizontal",
+      breakpoints: {
+        768: {
+          spaceBetween: 10,
+          slidesPerView: "auto",
+          direction: "vertical",
+        },
+      },
+    });
+
+    const swiper = new Swiper(productSlider, {
+      speed: 900,
+      spaceBetween: 20,
+      navigation: {
+        prevEl: productSlider.querySelector(".slider-arrow._prev"),
+        nextEl: productSlider.querySelector(".slider-arrow._next"),
+      },
+      thumbs: {
+        swiper: thumbSwiper,
+      },
+      breakpoints: {},
+    });
+  }
 }

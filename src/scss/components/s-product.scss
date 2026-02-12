@@ -1,0 +1,180 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-product {
+  @include tablet {
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+    @include desktop-middle {
+      gap: 30px;
+    }
+    @include laptop-middle {
+      flex-direction: column-reverse;
+    }
+  }
+  &__spec {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--nude);
+    text-align: center;
+    width: 350px;
+    line-height: 110%;
+    @include desktop-middle {
+      width: 300px;
+      padding: 30px;
+      gap: 30px;
+    }
+    @include laptop-middle {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 45px;
+      width: 100%;
+    }
+    @include tablet {
+      padding: 25px;
+      gap: 25px;
+      row-gap: 30px;
+    }
+    @include tablet-min {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 25px 20px;
+      gap: 15px;
+      row-gap: 25px;
+    }
+  }
+  &__spec-item {
+    .name {
+      opacity: 0.5;
+      margin-bottom: 20px;
+      @include tablet {
+        margin-bottom: 15px;
+      }
+    }
+    .val {
+      font-size: 28px;
+      @include tablet {
+        font-size: 24px;
+      }
+    }
+  }
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 40px;
+    flex: 1;
+    height: 700px;
+    @include desktop {
+      gap: 30px;
+      height: 560px;
+    }
+    @include laptop-middle {
+      flex: auto;
+    }
+    @include laptop-min {
+      height: 450px;
+      grid-template-columns: 1fr 120px;
+    }
+    @include tablet {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .slider-arrow {
+      display: flex !important;
+      &._prev {
+        left: 0;
+      }
+      &._next {
+        right: 0;
+      }
+    }
+  }
+  &__slide {
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+    @include tablet {
+      aspect-ratio: 1/0.63;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 0.3s linear;
+    }
+  }
+  &__thumb-slider {
+    width: 100%;
+    height: 100%;
+    @include tablet {
+      overflow: visible !important;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  &__thumb-slide {
+    height: 120px;
+    width: 100%;
+    cursor: pointer;
+
+    @include tablet {
+      width: 120px !important;
+      height: 90px;
+    }
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+      &::before {
+        opacity: 0.5;
+      }
+    }
+    @include laptop-middle {
+      height: 80px;
+    }
+
+    &.swiper-slide-thumb-active {
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      border: 2px solid var(--primary);
+      opacity: 0;
+      z-index: 1;
+
+      transition: opacity 0.3s ease;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 0.3s linear;
+    }
+  }
+}
