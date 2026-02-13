@@ -1,5 +1,7 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 18 18" fill="none" id="icon-arrow-next" xmlns="http://www.w3.org/2000/svg">
 <path d="M6 18L9.08829 18L17.9937 9L9.08829 -3.89543e-07L6 -5.24537e-07L13.718 7.8L-3.0981e-08 7.8L-1.35888e-07 10.2L13.718 10.2L6 18Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 22 22" fill="none" id="icon-check-circle" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C12.5689 1 14.0535 1.36132 15.375 2.00529M19.125 4.75L10.375 13.5L7.875 11" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
 </symbol><symbol viewBox="0 0 256 256" id="icon-close" xmlns="http://www.w3.org/2000/svg"><rect width="256" height="256" fill="none"/><line x1="200" y1="56" x2="56" y2="200" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="200" x2="56" y2="56" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></symbol><symbol viewBox="0 0 19 20" fill="none" id="icon-download" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 16.0399L1 19H18V16.0399M9.50119 1V13.645M9.50119 13.645L14.3583 8.81337M9.50119 13.645L4.64404 8.81337" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
 </symbol><symbol viewBox="0 0 39 36" fill="none" id="icon-layout" xmlns="http://www.w3.org/2000/svg">

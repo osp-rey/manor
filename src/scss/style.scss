@@ -45,7 +45,7 @@
 @use "./components/s-contacts";
 @use "./components/s-help";
 @use "./components/s-archive-object";
-@use "./components/s-intro-object";
+@use "./components/s-intro";
 @use "./components/s-adv";
 @use "./components/s-about";
 @use "./components/s-plan";
@@ -55,5 +55,6 @@
 @use "./components/s-product";
 @use "./components/s-gallery";
 @use "./components/s-layout";
+@use "./components/s-get-calc";
 
 @use "./components/footer";

@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .s-intro {
   position: relative;
@@ -44,7 +44,6 @@
     margin-bottom: 20px;
   }
   &__title {
-    max-width: 600px;
     margin-bottom: 20px;
   }
   &__content {
@@ -67,5 +66,42 @@
   }
   &__btn-play {
     margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 545px;
+    backdrop-filter: blur(5px);
+    background: rgba(34, 54, 43, 0.7);
+    padding: 20px;
+    max-width: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      line-height: 110%;
+      font-size: 22px;
+
+      @include laptop-middle {
+        font-size: 20px;
+      }
+      @include laptop-min {
+        font-size: 18px
+      }
+      @include tablet {
+        font-size: 16px;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        color: var(--biege);
+      }
+    }
   }
 }
