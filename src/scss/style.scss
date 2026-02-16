@@ -26,6 +26,8 @@
 @use "./ui/pagination";
 @use "./ui/content";
 @use "./ui/filters";
+@use "./ui/card-mortgage";
+@use "./ui/card-team";
 
 // components
 @use "./components/header";
@@ -56,5 +58,10 @@
 @use "./components/s-gallery";
 @use "./components/s-layout";
 @use "./components/s-get-calc";
+@use "./components/s-built";
+@use "./components/s-price";
+@use "./components/s-mortgage";
+@use "./components/s-team";
+@use "./components/s-certificates";
 
 @use "./components/footer";

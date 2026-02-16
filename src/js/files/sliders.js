@@ -363,4 +363,159 @@ export default function sliders() {
       },
     });
   }
+
+  const builtSlider = document.querySelector(".s-built__slider");
+
+  if (builtSlider) {
+    const swiper = new Swiper(builtSlider, {
+      speed: 900,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 6000,
+      },
+      navigation: {
+        prevEl: ".s-built .slider-arrow._prev",
+        nextEl: ".s-built .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-built .slider-pagination",
+        clickable: true,
+      },
+      on: {
+        touchStart: function (swiper, event) {
+          const isChild = event.target.closest(".s-built__gallery");
+          if (isChild) {
+            swiper.allowTouchMove = false;
+          }
+        },
+        touchEnd: function (swiper) {
+          swiper.allowTouchMove = true;
+        },
+      },
+    });
+  }
+
+  const builtGallerySliders = document.querySelectorAll(
+    ".s-built__gallery-slider",
+  );
+
+  if (builtGallerySliders.length) {
+    builtGallerySliders.forEach((slider) => {
+      const thumbSwiper = new Swiper(slider.nextElementSibling, {
+        speed: 900,
+        spaceBetween: 10,
+        slidesPerView: "auto",
+      });
+
+      const swiper = new Swiper(slider, {
+        speed: 900,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        thumbs: {
+          swiper: thumbSwiper,
+        },
+        navigation: {
+          prevEl: slider
+            .closest(".slider-wrapper")
+            .querySelector(".slider-arrow-rect._prev"),
+          nextEl: slider
+            .closest(".slider-wrapper")
+            .querySelector(".slider-arrow-rect._next"),
+        },
+      });
+    });
+  }
+
+  const mortgageSlider = document.querySelector(".s-mortgage__slider");
+
+  if (mortgageSlider) {
+    const swiper = new Swiper(mortgageSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-mortgage .slider-arrow._prev",
+        nextEl: ".s-mortgage .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-mortgage .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
+
+  const teamSlider = document.querySelector(".s-team__slider");
+
+  if (teamSlider) {
+    const swiper = new Swiper(teamSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-team .slider-arrow._prev",
+        nextEl: ".s-team .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-team .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1200: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
+
+  const certificatesSlider = document.querySelector(".s-certificates__slider");
+
+  if (certificatesSlider) {
+    const swiper = new Swiper(certificatesSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-certificates .slider-arrow._prev",
+        nextEl: ".s-certificates .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-certificates .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1200: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
 }

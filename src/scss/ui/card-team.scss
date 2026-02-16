@@ -1,0 +1,32 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.card-team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  aspect-ratio: 1/1.27;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(180deg, rgba(34, 54, 43, 0) 70%, #22362b 100%);
+    z-index: -1;
+  }
+
+  &__body {
+    margin-top: auto;
+    padding: 30px;
+    @include laptop-middle {
+      padding: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__post {
+  }
+}
