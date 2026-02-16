@@ -5,10 +5,22 @@
   --content-width: 1720px;
   --offset-width: 15px;
   --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+  --container-width-min: calc(1200px + (var(--offset-width) * 2));
 }
 
 .container {
   max-width: var(--container-width);
+  width: 100%;
+  padding: 0 var(--offset-width);
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 10px;
+  }
+}
+
+.container-min {
+  max-width: var(--container-width-min);
   width: 100%;
   padding: 0 var(--offset-width);
   margin: 0 auto;

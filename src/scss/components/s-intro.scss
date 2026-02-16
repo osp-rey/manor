@@ -3,6 +3,8 @@
 
 .s-intro {
   position: relative;
+  display: flex;
+  flex-direction: column;
   color: white;
   min-height: 600px;
   padding-bottom: 50px;
@@ -10,6 +12,11 @@
 
   @include laptop-middle {
     min-height: 500px;
+  }
+
+  .container {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   &::before {

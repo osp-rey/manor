@@ -1,12 +1,6 @@
 @use "../base/templates" as *;
 @use "../base/media" as *;
 
-.h-title {
-  margin-bottom: 40px;
-  @include laptop-min {
-    margin-bottom: 30px;
-  }
-}
 .m-title {
   font-weight: 700;
   font-size: 48px;
@@ -48,6 +42,12 @@
     @include laptop-min {
       margin-bottom: 30px;
     }
+  }
+}
+.h-title {
+  margin-bottom: 40px;
+  @include laptop-min {
+    margin-bottom: 30px;
   }
 }
 .t-title {
