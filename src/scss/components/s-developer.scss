@@ -1,7 +1,9 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .s-developer {
+  position: relative;
+  z-index: 1;
   &__wrapper {
     display: flex;
     align-items: start;
@@ -14,7 +16,7 @@
       gap: 30px;
     }
   }
-  &__gallery{
+  &__gallery {
     position: sticky;
     top: 150px;
     display: block;
@@ -64,6 +66,26 @@
         width: 18px;
         height: 18px;
       }
+    }
+  }
+  &__show-logo {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 120px;
+    z-index: -1;
+
+    @include laptop {
+      bottom: 100px;
+    }
+    @include laptop-min {
+      bottom: 80px;
+    }
+    @include tablet {
+      bottom: 65px;
+    }
+    @include tablet-min {
+      bottom: 50px;
     }
   }
 }
