@@ -3,6 +3,7 @@ import burger from "./files/burger.js";
 import buttonsNote from "./files/buttonsNote.js";
 import filtersToggle from "./files/filters-toggle.js";
 import inputBtnContent from "./files/inputBtnContent.js";
+import inputFile from "./files/inputFile.js";
 import inputmask from "./files/inputmask.js";
 import location from "./files/location.js";
 import map from "./files/map.js";
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   map();
   buttonsNote();
   filtersToggle();
+  inputFile();
 
   Fancybox.bind("[data-fancybox]", {});
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }]);
