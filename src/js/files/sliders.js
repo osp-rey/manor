@@ -518,4 +518,36 @@ export default function sliders() {
       },
     });
   }
+
+  const banksSlider = document.querySelector(".s-banks__slider");
+
+  if (banksSlider) {
+    const swiper = new Swiper(banksSlider, {
+      speed: 900,
+      spaceBetween: 15,
+      slidesPerView: "auto",
+      navigation: {
+        prevEl: ".s-banks .slider-arrow._prev",
+        nextEl: ".s-banks .slider-arrow._next",
+      },
+      pagination: {
+        el: ".s-banks .slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1200: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
 }
