@@ -128,6 +128,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     row-gap: 45px;
+    margin-top: 40px;
 
     @include laptop {
       gap: 20px;
@@ -135,6 +136,7 @@
     }
     @include laptop-min {
       grid-template-columns: repeat(2, 1fr);
+      margin-top: 30px;
     }
     @include tablet-min {
       grid-template-columns: 1fr;

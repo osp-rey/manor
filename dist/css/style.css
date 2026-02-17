@@ -2150,7 +2150,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 40px;
-  row-gap: 45px
+  row-gap: 45px;
+  margin-top: 40px
 }
 .s-product__wrapper {
   display: flex;
@@ -3618,7 +3619,8 @@ img {
     bottom: 80px
   }
   .s-shop__grid {
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px
   }
   .s-product__gallery {
     height: 450px;
