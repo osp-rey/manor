@@ -18,4 +18,16 @@
   @include tablet-min {
     font-size: 14px;
   }
+
+  &.error404 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
 }

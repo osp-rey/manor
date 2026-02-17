@@ -6,6 +6,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 40px;
+
+    @media (min-width: 1200px) {
+      &._border {
+        border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+      }
+    }
+
     @include laptop-middle {
       grid-template-columns: 1fr;
     }
@@ -24,12 +31,14 @@
     display: grid;
     gap: 30px;
     padding-top: 30px;
+    padding-bottom: 30px;
 
     @include laptop {
       gap: 20px;
     }
     @include laptop-middle {
       padding-top: 0;
+      padding-bottom: 0;
     }
     @include tablet-min {
       grid-template-columns: 1fr !important;
