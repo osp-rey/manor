@@ -7,6 +7,15 @@
   z-index: 100;
   color: white;
   background-color: var(--primary);
+
+  transition: transform .4s ease;
+
+  @media (min-width: 992px) {
+    &._scroll {
+      transform: translateY(-100%);
+    }
+  }
+
   &__inside {
     position: relative;
   }
